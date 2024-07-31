@@ -86,6 +86,10 @@ namespace EmployeeManagement
                             if (table.Rows.Count >= 1)
                             {
                                 MessageBox.Show($"Login succesfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                var mainForm = new MainForm();
+                                mainForm.Show();
+                                this.Hide();
                             }
                             else
                             {
