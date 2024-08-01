@@ -28,48 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button8 = new Button();
+            addEmployee_delete_btn = new Button();
             button5 = new Button();
-            button4 = new Button();
-            button7 = new Button();
+            addEmployee_clear_btn = new Button();
+            addEmployee_update_btn = new Button();
             button3 = new Button();
-            button6 = new Button();
+            addEmployee_add_btn = new Button();
             button2 = new Button();
-            button1 = new Button();
-            pictureBox1 = new PictureBox();
-            comboBox2 = new ComboBox();
+            addEmployee_import = new Button();
+            addEmployee_photo = new PictureBox();
+            addEmployee_position = new ComboBox();
             label6 = new Label();
-            textBox3 = new TextBox();
+            addEmployee_phone = new TextBox();
             label5 = new Label();
-            comboBox1 = new ComboBox();
+            addEmployee_gender = new ComboBox();
             label4 = new Label();
-            textBox2 = new TextBox();
+            addEmployee_fullName = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            addEmployee_id = new TextBox();
             label2 = new Label();
             dataGridView1 = new DataGridView();
             label1 = new Label();
             panel2 = new Panel();
+            addEmployee_status = new ComboBox();
+            label7 = new Label();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)addEmployee_photo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // button8
+            // addEmployee_delete_btn
             // 
-            button8.BackColor = Color.FromArgb(33, 11, 97);
-            button8.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button8.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button8.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(386, 162);
-            button8.Name = "button8";
-            button8.Size = new Size(94, 36);
-            button8.TabIndex = 17;
-            button8.Text = "Add";
-            button8.UseVisualStyleBackColor = false;
+            addEmployee_delete_btn.BackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_delete_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_delete_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_delete_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_delete_btn.ForeColor = Color.White;
+            addEmployee_delete_btn.Location = new Point(386, 162);
+            addEmployee_delete_btn.Name = "addEmployee_delete_btn";
+            addEmployee_delete_btn.Size = new Size(94, 36);
+            addEmployee_delete_btn.TabIndex = 17;
+            addEmployee_delete_btn.Text = "Delete";
+            addEmployee_delete_btn.UseVisualStyleBackColor = false;
+            addEmployee_delete_btn.Click += button8_Click;
             // 
             // button5
             // 
@@ -84,33 +87,33 @@
             button5.Text = "Add";
             button5.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // addEmployee_clear_btn
             // 
-            button4.BackColor = Color.FromArgb(33, 11, 97);
-            button4.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(505, 162);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 36);
-            button4.TabIndex = 16;
-            button4.Text = "Add";
-            button4.UseVisualStyleBackColor = false;
+            addEmployee_clear_btn.BackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_clear_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_clear_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_clear_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_clear_btn.ForeColor = Color.White;
+            addEmployee_clear_btn.Location = new Point(505, 162);
+            addEmployee_clear_btn.Name = "addEmployee_clear_btn";
+            addEmployee_clear_btn.Size = new Size(94, 36);
+            addEmployee_clear_btn.TabIndex = 16;
+            addEmployee_clear_btn.Text = "Clear";
+            addEmployee_clear_btn.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // addEmployee_update_btn
             // 
-            button7.BackColor = Color.FromArgb(33, 11, 97);
-            button7.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button7.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button7.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(274, 162);
-            button7.Name = "button7";
-            button7.Size = new Size(94, 36);
-            button7.TabIndex = 15;
-            button7.Text = "Add";
-            button7.UseVisualStyleBackColor = false;
+            addEmployee_update_btn.BackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_update_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_update_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_update_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_update_btn.ForeColor = Color.White;
+            addEmployee_update_btn.Location = new Point(274, 162);
+            addEmployee_update_btn.Name = "addEmployee_update_btn";
+            addEmployee_update_btn.Size = new Size(94, 36);
+            addEmployee_update_btn.TabIndex = 15;
+            addEmployee_update_btn.Text = "Update";
+            addEmployee_update_btn.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -125,19 +128,20 @@
             button3.Text = "Add";
             button3.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // addEmployee_add_btn
             // 
-            button6.BackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(150, 162);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 36);
-            button6.TabIndex = 14;
-            button6.Text = "Add";
-            button6.UseVisualStyleBackColor = false;
+            addEmployee_add_btn.BackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_add_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_add_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_add_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_add_btn.ForeColor = Color.White;
+            addEmployee_add_btn.Location = new Point(150, 162);
+            addEmployee_add_btn.Name = "addEmployee_add_btn";
+            addEmployee_add_btn.Size = new Size(94, 36);
+            addEmployee_add_btn.TabIndex = 14;
+            addEmployee_add_btn.Text = "Add";
+            addEmployee_add_btn.UseVisualStyleBackColor = false;
+            addEmployee_add_btn.Click += addEmployee_add_btn_Click;
             // 
             // button2
             // 
@@ -152,49 +156,51 @@
             button2.Text = "Add";
             button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // addEmployee_import
             // 
-            button1.BackColor = Color.FromArgb(33, 11, 97);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(687, 124);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 29);
-            button1.TabIndex = 13;
-            button1.Text = "Import";
-            button1.UseVisualStyleBackColor = false;
+            addEmployee_import.BackColor = Color.FromArgb(33, 11, 97);
+            addEmployee_import.ForeColor = Color.White;
+            addEmployee_import.Location = new Point(687, 124);
+            addEmployee_import.Name = "addEmployee_import";
+            addEmployee_import.Size = new Size(125, 29);
+            addEmployee_import.TabIndex = 13;
+            addEmployee_import.Text = "Import";
+            addEmployee_import.UseVisualStyleBackColor = false;
+            addEmployee_import.Click += addEmployee_import_Click;
             // 
-            // pictureBox1
+            // addEmployee_photo
             // 
-            pictureBox1.Location = new Point(687, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 85);
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
+            addEmployee_photo.BackColor = SystemColors.ButtonShadow;
+            addEmployee_photo.Location = new Point(687, 24);
+            addEmployee_photo.Name = "addEmployee_photo";
+            addEmployee_photo.Size = new Size(125, 85);
+            addEmployee_photo.TabIndex = 12;
+            addEmployee_photo.TabStop = false;
             // 
-            // comboBox2
+            // addEmployee_position
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Male", "Female", "Others" });
-            comboBox2.Location = new Point(449, 58);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(86, 28);
-            comboBox2.TabIndex = 11;
+            addEmployee_position.FormattingEnabled = true;
+            addEmployee_position.Items.AddRange(new object[] { "Business management", "Frontend developer", "Backend developer", "Data administratior", "UI/UX design" });
+            addEmployee_position.Location = new Point(449, 58);
+            addEmployee_position.Name = "addEmployee_position";
+            addEmployee_position.Size = new Size(86, 28);
+            addEmployee_position.TabIndex = 11;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(386, 59);
             label6.Name = "label6";
-            label6.Size = new Size(57, 20);
+            label6.Size = new Size(61, 20);
             label6.TabIndex = 10;
-            label6.Text = "Gender";
+            label6.Text = "Position";
             // 
-            // textBox3
+            // addEmployee_phone
             // 
-            textBox3.Location = new Point(449, 14);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(191, 27);
-            textBox3.TabIndex = 9;
+            addEmployee_phone.Location = new Point(449, 14);
+            addEmployee_phone.Name = "addEmployee_phone";
+            addEmployee_phone.Size = new Size(191, 27);
+            addEmployee_phone.TabIndex = 9;
             // 
             // label5
             // 
@@ -205,14 +211,14 @@
             label5.TabIndex = 8;
             label5.Text = "Phone number";
             // 
-            // comboBox1
+            // addEmployee_gender
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Male", "Female", "Others" });
-            comboBox1.Location = new Point(120, 105);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(86, 28);
-            comboBox1.TabIndex = 7;
+            addEmployee_gender.FormattingEnabled = true;
+            addEmployee_gender.Items.AddRange(new object[] { "Male", "Female", "Others" });
+            addEmployee_gender.Location = new Point(120, 105);
+            addEmployee_gender.Name = "addEmployee_gender";
+            addEmployee_gender.Size = new Size(86, 28);
+            addEmployee_gender.TabIndex = 7;
             // 
             // label4
             // 
@@ -223,12 +229,12 @@
             label4.TabIndex = 6;
             label4.Text = "Gender";
             // 
-            // textBox2
+            // addEmployee_fullName
             // 
-            textBox2.Location = new Point(120, 59);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(191, 27);
-            textBox2.TabIndex = 5;
+            addEmployee_fullName.Location = new Point(120, 59);
+            addEmployee_fullName.Name = "addEmployee_fullName";
+            addEmployee_fullName.Size = new Size(191, 27);
+            addEmployee_fullName.TabIndex = 5;
             // 
             // label3
             // 
@@ -239,12 +245,12 @@
             label3.TabIndex = 4;
             label3.Text = "Full name";
             // 
-            // textBox1
+            // addEmployee_id
             // 
-            textBox1.Location = new Point(120, 14);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(191, 27);
-            textBox1.TabIndex = 3;
+            addEmployee_id.Location = new Point(120, 14);
+            addEmployee_id.Name = "addEmployee_id";
+            addEmployee_id.Size = new Size(191, 27);
+            addEmployee_id.TabIndex = 3;
             // 
             // label2
             // 
@@ -276,33 +282,55 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonHighlight;
-            panel2.Controls.Add(button8);
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(addEmployee_status);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(addEmployee_delete_btn);
             panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button7);
+            panel2.Controls.Add(addEmployee_clear_btn);
+            panel2.Controls.Add(addEmployee_update_btn);
             panel2.Controls.Add(button3);
-            panel2.Controls.Add(button6);
+            panel2.Controls.Add(addEmployee_add_btn);
             panel2.Controls.Add(button2);
-            panel2.Controls.Add(button1);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(comboBox2);
+            panel2.Controls.Add(addEmployee_import);
+            panel2.Controls.Add(addEmployee_photo);
+            panel2.Controls.Add(addEmployee_position);
             panel2.Controls.Add(label6);
-            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(addEmployee_phone);
             panel2.Controls.Add(label5);
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(addEmployee_gender);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(addEmployee_fullName);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(addEmployee_id);
             panel2.Controls.Add(label2);
             panel2.Location = new Point(13, 283);
             panel2.Name = "panel2";
             panel2.Size = new Size(833, 223);
             panel2.TabIndex = 3;
             // 
+            // addEmployee_status
+            // 
+            addEmployee_status.FormattingEnabled = true;
+            addEmployee_status.Items.AddRange(new object[] { "Activate", "Desactivate" });
+            addEmployee_status.Location = new Point(449, 100);
+            addEmployee_status.Name = "addEmployee_status";
+            addEmployee_status.Size = new Size(86, 28);
+            addEmployee_status.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(386, 101);
+            label7.Name = "label7";
+            label7.Size = new Size(49, 20);
+            label7.TabIndex = 18;
+            label7.Text = "Status";
+            // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(dataGridView1);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(13, 12);
@@ -318,7 +346,7 @@
             Controls.Add(panel1);
             Name = "AddEmployee";
             Size = new Size(860, 526);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)addEmployee_photo).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -329,28 +357,30 @@
 
         #endregion
 
-        private Button button8;
+        private Button addEmployee_delete_btn;
         private Button button5;
-        private Button button4;
-        private Button button7;
+        private Button addEmployee_clear_btn;
+        private Button addEmployee_update_btn;
         private Button button3;
-        private Button button6;
+        private Button addEmployee_add_btn;
         private Button button2;
-        private Button button1;
-        private PictureBox pictureBox1;
-        private ComboBox comboBox2;
+        private Button addEmployee_import;
+        private PictureBox addEmployee_photo;
+        private ComboBox addEmployee_position;
         private Label label6;
-        private TextBox textBox3;
+        private TextBox addEmployee_phone;
         private Label label5;
-        private ComboBox comboBox1;
+        private ComboBox addEmployee_gender;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox addEmployee_fullName;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox addEmployee_id;
         private Label label2;
         private DataGridView dataGridView1;
         private Label label1;
         private Panel panel2;
         private Panel panel1;
+        private ComboBox addEmployee_status;
+        private Label label7;
     }
 }

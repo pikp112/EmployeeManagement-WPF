@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
-            label1 = new Label();
-            dataGridView1 = new DataGridView();
-            label2 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
-            maskedTextBox2 = new MaskedTextBox();
-            label3 = new Label();
-            maskedTextBox3 = new MaskedTextBox();
-            label4 = new Label();
-            maskedTextBox4 = new MaskedTextBox();
-            label5 = new Label();
-            button6 = new Button();
-            button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            button1 = new Button();
+            button6 = new Button();
+            maskedTextBox4 = new MaskedTextBox();
+            label5 = new Label();
+            maskedTextBox3 = new MaskedTextBox();
+            label4 = new Label();
+            maskedTextBox2 = new MaskedTextBox();
+            label3 = new Label();
+            maskedTextBox1 = new MaskedTextBox();
+            label2 = new Label();
+            panel2 = new Panel();
+            dataGridView1 = new DataGridView();
+            label1 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -52,6 +52,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button1);
@@ -68,127 +69,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(247, 528);
             panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.ButtonHighlight;
-            panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(label1);
-            panel2.Location = new Point(284, 15);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(572, 528);
-            panel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(18, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(128, 31);
-            label1.TabIndex = 0;
-            label1.Text = "Employees";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(18, 68);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(538, 441);
-            dataGridView1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(19, 68);
-            label2.Name = "label2";
-            label2.Size = new Size(94, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Employee ID";
-            // 
-            // maskedTextBox1
-            // 
-            maskedTextBox1.Location = new Point(19, 101);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(210, 27);
-            maskedTextBox1.TabIndex = 3;
-            // 
-            // maskedTextBox2
-            // 
-            maskedTextBox2.Location = new Point(19, 183);
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(210, 27);
-            maskedTextBox2.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(19, 150);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Full name";
-            // 
-            // maskedTextBox3
-            // 
-            maskedTextBox3.Location = new Point(19, 263);
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(210, 27);
-            maskedTextBox3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(19, 230);
-            label4.Name = "label4";
-            label4.Size = new Size(61, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Position";
-            // 
-            // maskedTextBox4
-            // 
-            maskedTextBox4.Location = new Point(19, 342);
-            maskedTextBox4.Name = "maskedTextBox4";
-            maskedTextBox4.Size = new Size(210, 27);
-            maskedTextBox4.TabIndex = 9;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(19, 309);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 20);
-            label5.TabIndex = 8;
-            label5.Text = "Salary";
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(19, 398);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 36);
-            button6.TabIndex = 15;
-            button6.Text = "Add";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(33, 11, 97);
-            button1.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(135, 398);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 36);
-            button1.TabIndex = 16;
-            button1.Text = "Update";
-            button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -217,6 +97,128 @@
             button3.TabIndex = 17;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(33, 11, 97);
+            button1.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(135, 398);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 36);
+            button1.TabIndex = 16;
+            button1.Text = "Update";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(33, 11, 97);
+            button6.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(19, 398);
+            button6.Name = "button6";
+            button6.Size = new Size(94, 36);
+            button6.TabIndex = 15;
+            button6.Text = "Add";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // maskedTextBox4
+            // 
+            maskedTextBox4.Location = new Point(19, 342);
+            maskedTextBox4.Name = "maskedTextBox4";
+            maskedTextBox4.Size = new Size(210, 27);
+            maskedTextBox4.TabIndex = 9;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(19, 309);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 20);
+            label5.TabIndex = 8;
+            label5.Text = "Salary";
+            // 
+            // maskedTextBox3
+            // 
+            maskedTextBox3.Location = new Point(19, 263);
+            maskedTextBox3.Name = "maskedTextBox3";
+            maskedTextBox3.Size = new Size(210, 27);
+            maskedTextBox3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(19, 230);
+            label4.Name = "label4";
+            label4.Size = new Size(61, 20);
+            label4.TabIndex = 6;
+            label4.Text = "Position";
+            // 
+            // maskedTextBox2
+            // 
+            maskedTextBox2.Location = new Point(19, 183);
+            maskedTextBox2.Name = "maskedTextBox2";
+            maskedTextBox2.Size = new Size(210, 27);
+            maskedTextBox2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(19, 150);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Full name";
+            // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(19, 101);
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(210, 27);
+            maskedTextBox1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(19, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(94, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Employee ID";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ButtonHighlight;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(label1);
+            panel2.Location = new Point(284, 15);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(572, 528);
+            panel2.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(18, 68);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(538, 441);
+            dataGridView1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(18, 15);
+            label1.Name = "label1";
+            label1.Size = new Size(128, 31);
+            label1.TabIndex = 0;
+            label1.Text = "Employees";
             // 
             // Salary
             // 
