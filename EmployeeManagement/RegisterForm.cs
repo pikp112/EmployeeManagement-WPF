@@ -64,7 +64,7 @@ namespace EmployeeManagement
                                 using (SqlCommand cmd = new(insertData, sqlConnection))
                                 {
                                     cmd.Parameters.AddWithValue("@username", signup_username.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@password", signup_showPassword.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@password", signup_password.Text.Trim());
                                     cmd.Parameters.AddWithValue("@dateReg", today);
 
                                     cmd.ExecuteNonQuery();
