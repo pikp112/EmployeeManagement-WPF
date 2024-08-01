@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EmployeeManagement
 {
-    public partial class AddEmployee : Form
+    public partial class Salary : UserControl
     {
-        public AddEmployee()
+        public Salary()
         {
             InitializeComponent();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
