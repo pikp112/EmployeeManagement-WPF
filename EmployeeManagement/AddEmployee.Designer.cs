@@ -100,6 +100,7 @@
             addEmployee_clear_btn.TabIndex = 16;
             addEmployee_clear_btn.Text = "Clear";
             addEmployee_clear_btn.UseVisualStyleBackColor = false;
+            addEmployee_clear_btn.Click += addEmployee_clear_btn_Click;
             // 
             // addEmployee_update_btn
             // 
@@ -114,6 +115,7 @@
             addEmployee_update_btn.TabIndex = 15;
             addEmployee_update_btn.Text = "Update";
             addEmployee_update_btn.UseVisualStyleBackColor = false;
+            addEmployee_update_btn.Click += addEmployee_update_btn_Click;
             // 
             // button3
             // 
@@ -263,12 +265,18 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.Location = new Point(20, 39);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(792, 188);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label1
             // 
@@ -317,6 +325,7 @@
             addEmployee_status.Name = "addEmployee_status";
             addEmployee_status.Size = new Size(86, 28);
             addEmployee_status.TabIndex = 19;
+            addEmployee_status.SelectedIndexChanged += addEmployee_status_SelectedIndexChanged;
             // 
             // label7
             // 

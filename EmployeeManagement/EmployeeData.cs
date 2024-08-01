@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -64,6 +65,46 @@ namespace EmployeeManagement
             }
 
             return listData;
+        }
+
+        public List<EmployeeData> SalaryEmployeeListData()
+        {
+            var listdata = new List<EmployeeData>();
+
+            if (sqlConnection.State != ConnectionState.Open)
+            {
+                try
+                {
+                    sqlConnection.Open();
+
+                    string selectData = "SELECT * FROM employees WHERE delete_date IS NULL";
+
+                    using (SqlCommand cmd = new SqlCommand(selectData, sqlConnection))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        while (reader.Read())
+                        {
+                            var ed = new EmployeeData();
+                            ed.EmployeeID = reader["employee_id"].ToString();
+                            ed.Name = reader["full_name"].ToString();
+                            ed.Position = reader["position"].ToString();
+                            ed.Salary = (int)reader["salary"];
+
+                            listdata.Add(ed);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex);
+                }
+                finally
+                {
+                    sqlConnection.Close();
+                }
+            }
+            return listdata;
         }
     }
 }

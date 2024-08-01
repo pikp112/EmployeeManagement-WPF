@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button2 = new Button();
-            button3 = new Button();
-            button1 = new Button();
-            button6 = new Button();
-            maskedTextBox4 = new MaskedTextBox();
+            salary_clear_btn = new Button();
+            salary_update_btn = new Button();
+            salary_salary = new MaskedTextBox();
             label5 = new Label();
-            maskedTextBox3 = new MaskedTextBox();
+            salary_position = new MaskedTextBox();
             label4 = new Label();
-            maskedTextBox2 = new MaskedTextBox();
+            salary_name = new MaskedTextBox();
             label3 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
+            salary_employeeId = new MaskedTextBox();
             label2 = new Label();
             panel2 = new Panel();
             dataGridView1 = new DataGridView();
@@ -53,85 +51,55 @@
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(button6);
-            panel1.Controls.Add(maskedTextBox4);
+            panel1.Controls.Add(salary_clear_btn);
+            panel1.Controls.Add(salary_update_btn);
+            panel1.Controls.Add(salary_salary);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(maskedTextBox3);
+            panel1.Controls.Add(salary_position);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(maskedTextBox2);
+            panel1.Controls.Add(salary_name);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(maskedTextBox1);
+            panel1.Controls.Add(salary_employeeId);
             panel1.Controls.Add(label2);
             panel1.Location = new Point(19, 15);
             panel1.Name = "panel1";
             panel1.Size = new Size(247, 528);
             panel1.TabIndex = 0;
             // 
-            // button2
+            // salary_clear_btn
             // 
-            button2.BackColor = Color.FromArgb(33, 11, 97);
-            button2.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(135, 457);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 36);
-            button2.TabIndex = 18;
-            button2.Text = "Clear";
-            button2.UseVisualStyleBackColor = false;
+            salary_clear_btn.BackColor = Color.FromArgb(33, 11, 97);
+            salary_clear_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            salary_clear_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            salary_clear_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            salary_clear_btn.ForeColor = Color.White;
+            salary_clear_btn.Location = new Point(135, 398);
+            salary_clear_btn.Name = "salary_clear_btn";
+            salary_clear_btn.Size = new Size(94, 36);
+            salary_clear_btn.TabIndex = 16;
+            salary_clear_btn.Text = "Clear";
+            salary_clear_btn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // salary_update_btn
             // 
-            button3.BackColor = Color.FromArgb(33, 11, 97);
-            button3.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(19, 457);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 36);
-            button3.TabIndex = 17;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = false;
+            salary_update_btn.BackColor = Color.FromArgb(33, 11, 97);
+            salary_update_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
+            salary_update_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
+            salary_update_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
+            salary_update_btn.ForeColor = Color.White;
+            salary_update_btn.Location = new Point(19, 398);
+            salary_update_btn.Name = "salary_update_btn";
+            salary_update_btn.Size = new Size(94, 36);
+            salary_update_btn.TabIndex = 15;
+            salary_update_btn.Text = "Update";
+            salary_update_btn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // salary_salary
             // 
-            button1.BackColor = Color.FromArgb(33, 11, 97);
-            button1.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(135, 398);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 36);
-            button1.TabIndex = 16;
-            button1.Text = "Update";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 11, 97);
-            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 11, 97);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(19, 398);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 36);
-            button6.TabIndex = 15;
-            button6.Text = "Add";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // maskedTextBox4
-            // 
-            maskedTextBox4.Location = new Point(19, 342);
-            maskedTextBox4.Name = "maskedTextBox4";
-            maskedTextBox4.Size = new Size(210, 27);
-            maskedTextBox4.TabIndex = 9;
+            salary_salary.Location = new Point(19, 342);
+            salary_salary.Name = "salary_salary";
+            salary_salary.Size = new Size(210, 27);
+            salary_salary.TabIndex = 9;
             // 
             // label5
             // 
@@ -142,12 +110,12 @@
             label5.TabIndex = 8;
             label5.Text = "Salary";
             // 
-            // maskedTextBox3
+            // salary_position
             // 
-            maskedTextBox3.Location = new Point(19, 263);
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(210, 27);
-            maskedTextBox3.TabIndex = 7;
+            salary_position.Location = new Point(19, 263);
+            salary_position.Name = "salary_position";
+            salary_position.Size = new Size(210, 27);
+            salary_position.TabIndex = 7;
             // 
             // label4
             // 
@@ -158,12 +126,12 @@
             label4.TabIndex = 6;
             label4.Text = "Position";
             // 
-            // maskedTextBox2
+            // salary_name
             // 
-            maskedTextBox2.Location = new Point(19, 183);
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(210, 27);
-            maskedTextBox2.TabIndex = 5;
+            salary_name.Location = new Point(19, 183);
+            salary_name.Name = "salary_name";
+            salary_name.Size = new Size(210, 27);
+            salary_name.TabIndex = 5;
             // 
             // label3
             // 
@@ -174,12 +142,12 @@
             label3.TabIndex = 4;
             label3.Text = "Full name";
             // 
-            // maskedTextBox1
+            // salary_employeeId
             // 
-            maskedTextBox1.Location = new Point(19, 101);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(210, 27);
-            maskedTextBox1.TabIndex = 3;
+            salary_employeeId.Location = new Point(19, 101);
+            salary_employeeId.Name = "salary_employeeId";
+            salary_employeeId.Size = new Size(210, 27);
+            salary_employeeId.TabIndex = 3;
             // 
             // label2
             // 
@@ -243,16 +211,16 @@
         private Panel panel2;
         private DataGridView dataGridView1;
         private Label label1;
-        private MaskedTextBox maskedTextBox4;
+        private MaskedTextBox salary_salary;
         private Label label5;
-        private MaskedTextBox maskedTextBox3;
+        private MaskedTextBox salary_position;
         private Label label4;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox salary_name;
         private Label label3;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox salary_employeeId;
         private Button button2;
         private Button button3;
-        private Button button1;
-        private Button button6;
+        private Button salary_clear_btn;
+        private Button salary_update_btn;
     }
 }
