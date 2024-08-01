@@ -38,6 +38,8 @@
             button1 = new Button();
             label2 = new Label();
             salary1 = new Salary();
+            dashboard1 = new Dashboard();
+            dashboard2 = new Dashboard();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -45,6 +47,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(75, 8, 138);
+            panel1.Controls.Add(dashboard1);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(exit);
             panel1.Dock = DockStyle.Top;
@@ -146,11 +149,26 @@
             salary1.Size = new Size(872, 557);
             salary1.TabIndex = 2;
             // 
+            // dashboard1
+            // 
+            dashboard1.Location = new Point(59, 13);
+            dashboard1.Name = "dashboard1";
+            dashboard1.Size = new Size(1035, 693);
+            dashboard1.TabIndex = 2;
+            // 
+            // dashboard2
+            // 
+            dashboard2.Location = new Point(306, 57);
+            dashboard2.Name = "dashboard2";
+            dashboard2.Size = new Size(872, 557);
+            dashboard2.TabIndex = 3;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1190, 626);
+            Controls.Add(dashboard2);
             Controls.Add(salary1);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -175,5 +193,7 @@
         private Button button3;
         private Button button2;
         private Salary salary1;
+        private Dashboard dashboard1;
+        private Dashboard dashboard2;
     }
 }
